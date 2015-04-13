@@ -18,7 +18,7 @@ var bio = {
 	"message" : "Thanks for stopping by my resume.",
 	"skills" :
 	["HTML", "CSS", "JavaScript", "Ergonomics", "Design", "Usability"],
-	"biopic" : "images/darren.png",
+	"pic" : "images/headshot.png",
 
 	// Replacing Resume Generic Data with JSON from above
 	"display" : function() {
@@ -37,6 +37,8 @@ var bio = {
 	$("#header").append(HTMLwelcomeMsg.replaceData(bio.message));
 	}
 };
+
+bio.display();
 
 var work = {
 	"jobs" : [
@@ -71,6 +73,9 @@ var work = {
 		}
 	}
 };
+
+work.display();
+
 /*
 var projects = {
 	"project" : [
@@ -175,7 +180,7 @@ var map = {
 };
 
 // This block called Display Functions
-bio.display();
-work.display();
+
+
 education.display();
 //map.display();
