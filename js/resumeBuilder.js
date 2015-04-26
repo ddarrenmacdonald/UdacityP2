@@ -47,19 +47,19 @@ var work = {
 		"title" : "Managing Director",
 		"location" : "Sydney, Nova Scotia",
 		"dates" : "Apr 2011 - present",
-		"description" : "Ergonomics consulting company"	},
+		"description" : "Launching a startup project can be overwhelming to say the least and starting as just a one-person shop can be even harder. I have been lucky to have the support of many friends, family and colleagues to rely on. To achieve this the focus will be on human-centred design and systems thinking. The products and services may change but the over-arching goal will remain the same. At present most of the services try to make 'work life' better but this may evolve over time working with our customers.  Being human-centred and holistic in our thinking will more than likely expand the services."	},
 	{
 		"employer" : "WCB of Nova Scotia",
 		"title" : "Relationship Manager, Ergonomist",
 		"location" : "Halifax, Nova Scotia",
 		"dates" : "Apr 2005 - Sep 2010",
-		"description" : "Frontline staff to customers"	},
+		"description" : "Upon returning to Canada I remained with Humantech for about 6 months.  The travel to the US from Cape Breton proved to be a bit challenging in winter and I had to find a solution. Fortunately I was able to join a new division of the WCB, their Prevention Services group and I was employee #4! The team grew to upwards of 20 and delivered injury prevention services to Nova Scotia workplaces. I consider my time at the WCB to be that of an intrapreneur. In that we had latitude and freedom to develop new service offerings for customers. During my time I held four different positions starting out as a Prevention Consultant.  Within the first year I developed the board's first Ergonomist position.  This would  lead to the creation of an Ergonomics Practice Leader position. A position I held until June 2009 before moving to a new position as 'Relationship Manager' as part of our new service model."	},
 	{
 		"employer" : "Humantech, Inc",
 		"title" : "Sr. Ergonomics Engineer",
 		"location" : "Irvine, California",
 		"dates" : "Dec 2000 - Apr - 2005",
-		"description" : "Worlds largest Ergonomics consulting company"}
+		"description" : "Some of the best friendships and work relationships in my life have come from my time at Humantech.  This was also a rewarding position based on the sheer number of people I helped with on a weekly basis. Southern California is full of Canadians, as well as, a few people from my alma mater, Dalhousie University.  This made the transition to the area much easier. My American colleagues welcomed us with open arms and it was great to experience each other’s cultures. In my role as an Ergonomics Engineer, I provided  ergonomics support to Fortune 500 organizations.  These amazing client companies provided me with a lot of practical hands-on experience. The people I met while consulting and training helped shape my perception of Ergonomics and why I do what I do. During my time at Humantech I had the chance to live in Ann Arbor, Michigan, Irvine, California and my home town of Glace Bay, Nova Scotia!"}
 	],
 		"display" : function(){
 		// Replace Employement Info
