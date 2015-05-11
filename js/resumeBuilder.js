@@ -103,6 +103,8 @@ var projects = {
 	}
 	],
 };
+
+project.display();
 */
 
 var education = {
