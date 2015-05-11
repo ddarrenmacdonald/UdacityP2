@@ -232,6 +232,16 @@ var education = {
 
 education.display();
 
+// Adding locations to Google Map
+function locationizer(work_obj) {
+    var locationArray = [];
+    for (job in work_obj.jobs) {
+        var newLocation = work_obj.jobs[job].location;
+        locationArray.push(newLocation);
+    }
+    return locationArray;
+}
+
 
 // Logging clicks
 $(document).click(function (loc) {
