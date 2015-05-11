@@ -34,6 +34,12 @@ var bio = {
 	$("#topContacts").prepend(HTMLtwitter.replaceData(bio.contact.twitter));
 	$("#topContacts").prepend(HTMLlocation.replaceData(bio.contact.location));
 
+	// Footer Info
+	$("#footerContacts").prepend(HTMLmobile.replaceData(bio.contact.mobile));
+	$("#footerContacts").prepend(HTMLemail.replaceData(bio.contact.email));
+	$("#footerContacts").prepend(HTMLgithub.replaceData(bio.contact.github));
+	$("#footerContacts").prepend(HTMLtwitter.replaceData(bio.contact.twitter));
+
 	// Welcome Message
 	$("#header").append(HTMLwelcomeMsg.replaceData(bio.message));
 	}
