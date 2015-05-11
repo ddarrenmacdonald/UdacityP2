@@ -21,7 +21,7 @@ var bio = {
 	"pic" : "images/headshot.png",
 
 	// Replacing Resume Generic Data with JSON from above
-	"display" : function() {
+	display : function() {
 	// Header Info
 	$("#header").prepend(HTMLheaderRole.replaceData(bio.role));
 	$("#header").prepend(HTMLheaderName.replaceData(bio.name));
@@ -41,6 +41,7 @@ var bio = {
 
 bio.display();
 
+// Work
 var work = {
 	"jobs" : [
 	{
@@ -62,7 +63,9 @@ var work = {
 		"dates" : "Dec 2000 - Apr - 2005",
 		"description" : "Some of the best friendships and work relationships in my life have come from my time at Humantech.  This was also a rewarding position based on the sheer number of people I helped with on a weekly basis. Southern California is full of Canadians, as well as, a few people from my alma mater, Dalhousie University.  This made the transition to the area much easier. My American colleagues welcomed us with open arms and it was great to experience each other’s cultures. In my role as an Ergonomics Engineer, I provided  ergonomics support to Fortune 500 organizations.  These amazing client companies provided me with a lot of practical hands-on experience. The people I met while consulting and training helped shape my perception of Ergonomics and why I do what I do. During my time at Humantech I had the chance to live in Ann Arbor, Michigan, Irvine, California and my home town of Glace Bay, Nova Scotia!"}
 	],
-		"display" : function(){
+
+// Display Work
+		display : function(){
 		// Replace Employement Info
 		for (job in work.jobs) {
 			var current = work.jobs[job];
@@ -77,7 +80,7 @@ var work = {
 
 work.display();
 
-
+// Projects
 var projects = {
 	"projects" : [
 	{
@@ -103,8 +106,8 @@ var projects = {
 	}
 	],
 
-	// Injecting JSON project data into resume
-	"display" : function() {
+// Injecting JSON project data into resume
+	display : function() {
 		for (project in projects.projects) {
 			var current = projects.projects[project];
 			$("#projects").append(HTMLprojectStart);
@@ -122,7 +125,7 @@ var projects = {
 
 projects.display();
 
-
+// Education
 var education = {
 	"schools" : [
 	{
@@ -200,8 +203,8 @@ var education = {
 	}
 	],
 	
-	"display" : function(){
-	// Education
+// Display Education
+	display : function(){
 	for(school in education.schools) {
 		var current = education.schools[school];
 		$("#education").append(HTMLschoolStart);
@@ -223,6 +226,8 @@ var education = {
 }
 };
 
+education.display();
+
 // Display Google Map
 var map = {
 	display : function(){
@@ -230,7 +235,4 @@ var map = {
 	}
 };
 
-// This block called Display Functions
-
-education.display();
-//map.display();
+map.display();
