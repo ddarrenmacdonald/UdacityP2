@@ -81,23 +81,23 @@ work.display();
 var projects = {
 	"project" : [
 	{
-		"title" : "Name of project",
-		"dates" :	"mon year - mon year",
-		"description" : "Project description",
+		"title" : "Chat Application",
+		"dates" :	"Nov 2014",
+		"description" : "This was one of my first coding projects at UIT, to create a client-side, chat user interface (UI) that enables a user to add new messages to a list. To add a new message, the user can type messages in a form and either hit the enter key, or press a 'send' button.",
 		"images" :[
 		"pic1.png", "pic2.png"]
 	},
 	{
-		"title" : "Name of project",
-		"dates" :	"mon year - mon year",
-		"description" : "Project description",
+		"title" : "Ergonomics Mobile App",
+		"dates" :	"Feb 2015",
+		"description" : "The project is required us to build a mobile app with our own unique idea. The app was built using the Ionic Framework, Node.js/Express to build a Rest API and a PostgreSQL database to store and retrieve data.",
 		"images" :[
 		"pic1.png", "pic2.png"]
 	},
 	{
-		"title" : "Name of project",
-		"dates" :	"mon year - mon year",
-		"description" : "Project description",
+		"title" : "Taskrr",
+		"dates" :	"Apr 2014",
+		"description" : "This project was a TaskRabbit clone, which is an online and mobile marketplace that allows users to outsource small jobs and tasks to others in their neighbourhood. Users name the task they need done, name the price they are willing to pay, and a network of pre-approved contractors bid to complete the job. In this project we used AngularJS and Firebase technologies.",
 		"images" :[
 		"pic1.png", "pic2.png"]
 	}
