@@ -77,9 +77,9 @@ var work = {
 
 work.display();
 
-/*
+
 var projects = {
-	"project" : [
+	"projects" : [
 	{
 		"title" : "Chat Application",
 		"dates" :	"Nov 2014",
@@ -102,10 +102,26 @@ var projects = {
 		"pic1.png", "pic2.png"]
 	}
 	],
+
+	// Injecting JSON project data into resume
+	"display" : function() {
+		for (project in projects.projects) {
+			var current = projects.projects[project];
+			$("#projects").append(HTMLprojectStart);
+			$(".project-entry:last").append(HTMLprojectTitle.replaceData(current.title).replace("#",current.url));
+			$(".project-entry:last").append(HTMLprojectDates.replaceData(current.dates));
+			$(".project-entry:last").append(HTMLprojectDescription.replaceData(current.description));
+			if(current.images.length >0){
+				for(image in current.images){
+					$(".project-entry:last").append(HTMLprojectImage.replaceData(current.images))
+				}
+			}
+		}
+	}
 };
 
-project.display();
-*/
+projects.display();
+
 
 var education = {
 	"schools" : [
