@@ -149,8 +149,8 @@ function initializeMap() {
   function createMapMarker(placeData) {
 
     // The next lines save location data from the search result object to local variables
-    var lat = placeData.geometry.location.k;  // latitude from the place service
-    var lon = placeData.geometry.location.D;  // longitude from the place service
+    //var lat = placeData.geometry.location.k;  // latitude from the place service
+    //var lon = placeData.geometry.location.D;  // longitude from the place service
     var name = placeData.formatted_address;   // name of the place from the place service
     var bounds = window.mapBounds;            // current boundaries of the map window
 
@@ -160,6 +160,8 @@ function initializeMap() {
       position: placeData.geometry.location,
       title: name
     });
+
+    
 
     // infoWindows are the little helper windows that open when you click
     // or hover over a pin on a map. They usually contain more information
@@ -175,7 +177,7 @@ function initializeMap() {
 
     // this is where the pin actually gets added to the map.
     // bounds.extend() takes in a map location object
-    bounds.extend(new google.maps.LatLng(lat, lon));
+    bounds.extend(placeData.geometry.location);
     // fit the map to the new marker
     map.fitBounds(bounds);
     // center the map
