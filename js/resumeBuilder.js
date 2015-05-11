@@ -232,11 +232,14 @@ var education = {
 
 education.display();
 
-// Display Google Map
-var map = {
-	display : function(){
-		$("#mapDiv").append(googleMap);
-	}
-};
 
-map.display();
+// Logging clicks
+$(document).click(function (loc) {
+  var x = loc.pageX;
+  var y = loc.pageY;
+
+  logClicks(x, y);
+});
+
+// Display Google Map
+$("#mapDiv").append(googleMap);
