@@ -269,13 +269,5 @@ function locationizer(work_obj) {
     return locationArray;
 }
 
-// Logging clicks
-$(document).click(function (loc) {
-  var x = loc.pageX;
-  var y = loc.pageY;
-
-  logClicks(x, y);
-});
-
 // Display Google Map
 $("#mapDiv").append(googleMap);
