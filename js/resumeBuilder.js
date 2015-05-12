@@ -26,6 +26,7 @@ var bio = {
 	$("#header").prepend(HTMLheaderRole.replaceData(bio.role));
 	$("#header").prepend(HTMLheaderName.replaceData(bio.name));
 	$("#header").prepend(HTMLbioPic.replaceData(bio.pic));
+
 	
 	// Contact Info
 	$("#topContacts").prepend(HTMLmobile.replaceData(bio.contact.mobile));
@@ -42,6 +43,12 @@ var bio = {
 
 	// Welcome Message
 	$("#header").append(HTMLwelcomeMsg.replaceData(bio.message));
+
+	//Skills
+		$('#header').append(HTMLskillsStart);
+		for (var i=0; i<bio.skills.length; i++){
+			$('#skills').append(HTMLskills.replace("%data%",bio.skills[i]));
+		}
 	}
 };
 
