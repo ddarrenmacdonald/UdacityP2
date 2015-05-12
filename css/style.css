@@ -1,3 +1,5 @@
+/* This file needs to be cleaned up, it has some unused styles in here */
+
 * {
   padding:0;
   margin:0;
@@ -15,7 +17,7 @@
 
 h1 {
   font-size: 40px;
-  color: #F5A623;
+  color: #7FE733;
   line-height: 48px;
   display: inline;
 }
@@ -23,7 +25,7 @@ h1 {
 h2 {
   font-weight: bold;
   font-size: 24px;
-  color: #999999;
+  color: #000;
   line-height: 29px;
   padding: 10px;
 }
@@ -48,22 +50,26 @@ h2, h3, h4, h5 {
   padding-right: 5%;
 }
 
+#topContacts a {
+  color: #fff;
+}
 
 .date-text {
   font-style: italic;
-  font-size: 14px;
-  color: #999999;
+  font-style: bold;
+  font-size: 16px;
+  color: #000;
   line-height: 16px;
   float: left;
 }
 
 .location-text {
+  font-family: Rock+Salt;
   font-style: italic;
-  font-size: 14px;
-  color: #999999;
+  font-size: 16px;
+  color: #56A0D3;
   line-height: 16px;
   float: right;
-
 }
 
 p {
@@ -73,10 +79,14 @@ p {
 }
 
 a {
-  color: #1199C3;
+  color: #999;
   text-decoration: none;
   margin-top: 10px;
   display: block;
+}
+
+.jobRole {
+  font-size: 18px;
 }
 
 .welcome-message {
@@ -92,11 +102,11 @@ a {
 }
 
 .orange {
-  background-color: #F5AE23;
+  background-color: #7FE733;
 }
 
 .orange-text {
-  color: #F5AE23;
+  color: #7FE733;
 }
 
 .white-text {
@@ -111,12 +121,12 @@ a {
 }
 
 .dark-gray {
-  background-color: #4A4A4A;
+  background-color: #56A0D3;
 }
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background-color: #56A0D3;
 }
 
 .flex-box {
@@ -166,10 +176,18 @@ span {
   padding: 5px;
 }
 
-#letsConnect {
+.styleName {
+  color: #00AF54;
+  font-size: 18px;
+}
+#letsConnect h2 {
   text-align: center;
+  color: #fff;
 }
 
+#footerContacts a {
+  color: #fff;
+}
 @media only screen and (max-width: 1024px) {
   #letsConnect {
     margin-top: 5%;

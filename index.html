@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <head>
-  <!-- This tells the browser how to read the document. -->
+  <!-- This was a good learning project, need to refactor some more code -->
   <meta charset="utf-8">
 
   <title>Resume of D.Darren MacDonald</title>
 
   <!-- Load the page styles. -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="css/style.css" rel="stylesheet" type="text/css">
+  <!-- Custom fonts from Google -->
+  <link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
   <!-- Load in scripts -->
   <script src="js/jQuery.js"></script>
   <script src="js/helper.js"></script>
@@ -14,7 +19,6 @@
 
   <meta name="viewport" content="width=device-width">
 </head>
-
 
 <body unresolved>
   <div id="main">
@@ -26,15 +30,21 @@
     <div id="workExperience" class='gray'>
       <h2>Work Experience</h2>
     </div>
+  <!-- Added in some Bootstrap to make the projects responsive -->  
+  <div class="row">
     <div id="projects">
-      <h2>Projects</h2>
+      <h2 class="project-entry col-md-12">Projects</h2>
     </div>
+  </div>
+
     <div id="education" class='gray'>
-      <h2>Education</h2>
+      <h2 class="education-entry col-md-12">Education</h2>
     </div>
+  <!-- Map information -->
     <div id="mapDiv">
-      <h2>Where I've Lived and Worked</h2>
+      <h2>Where I've Lived, Worked and Studied</h2>
     </div>
+  <!-- Need to change the color references to contextual ones -->
     <div id="letsConnect" class='dark-gray'>
       <h2 class='orange center-text'>Let's Connect</h2>
         <ul id="footerContacts" class="flex-box">
@@ -42,8 +52,8 @@
     </div>
   </div>
 
+  <!-- Additional scripts -->
   <script src="js/resumeBuilder.js"></script>
-
   <script type="text/javascript">
     
     if(document.getElementsByClassName('flex-item').length === 0) {

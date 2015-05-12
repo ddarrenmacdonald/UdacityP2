@@ -15,7 +15,7 @@ var bio = {
 		"twitter" : "<a href='https://twitter.com/drrnmcdnld'>@drrnmcdnld</a>",
 		"location" : "Nova Scotia, Canada"
 	},
-	"message" : "Thanks for stopping by my resume.",
+	"message" : '"Thanks for checking out my first online resume!"',
 	"skills" :
 	["HTML", "CSS", "JavaScript", "Ergonomics", "Design", "Usability"],
 	"pic" : "images/headshot.png",
@@ -44,7 +44,6 @@ var bio = {
 	$("#header").append(HTMLwelcomeMsg.replaceData(bio.message));
 	}
 };
-bio.display();
 
 // Work
 var work = {
@@ -54,19 +53,29 @@ var work = {
 		"title" : "Managing Director",
 		"location" : "Sydney, Nova Scotia",
 		"dates" : "Apr 2011 - present",
-		"description" : "Launching a startup project can be overwhelming to say the least and starting as just a one-person shop can be even harder. I have been lucky to have the support of many friends, family and colleagues to rely on. To achieve this the focus will be on human-centred design and systems thinking. The products and services may change but the over-arching goal will remain the same. At present most of the services try to make 'work life' better but this may evolve over time working with our customers. Being human-centred and holistic in our thinking will more than likely expand the services."	},
+		"description" : "Launching a startup project can be overwhelming to say the least and starting as just a one-person shop can be even harder. I have been lucky to have the support of many friends, family and colleagues to rely on. To achieve this the focus will be on human-centred design and systems thinking. The products and services may change but the over-arching goal will remain the same. At present most of the services try to make 'work life' better but this may evolve over time working with our customers. Being human-centred and holistic in our thinking will more than likely expand the services.",
+		"url" : "http://tektol.com" },
 	{
 		"employer" : "WCB of Nova Scotia",
 		"title" : "Relationship Manager, Ergonomist",
 		"location" : "Halifax, Nova Scotia",
 		"dates" : "Apr 2005 - Sep 2010",
-		"description" : "Upon returning to Canada I remained with Humantech for about 6 months.  The travel to the US from Cape Breton proved to be a bit challenging in winter and I had to find a solution. Fortunately I was able to join a new division of the WCB, their Prevention Services group and I was employee #4! The team grew to upwards of 20 and delivered injury prevention services to Nova Scotia workplaces. I consider my time at the WCB to be that of an intrapreneur. In that we had latitude and freedom to develop new service offerings for customers. During my time I held four different positions starting out as a Prevention Consultant.  Within the first year I developed the board's first Ergonomist position.  This would  lead to the creation of an Ergonomics Practice Leader position. A position I held until June 2009 before moving to a new position as 'Relationship Manager' as part of our new service model."	},
+		"description" : "Upon returning to Canada I remained with Humantech for about 6 months.  The travel to the US from Cape Breton proved to be a bit challenging in winter and I had to find a solution. Fortunately I was able to join a new division of the WCB, their Prevention Services group and I was employee #4! The team grew to upwards of 20 and delivered injury prevention services to Nova Scotia workplaces. I consider my time at the WCB to be that of an intrapreneur. In that we had latitude and freedom to develop new service offerings for customers. During my time I held four different positions starting out as a Prevention Consultant.  Within the first year I developed the board's first Ergonomist position.  This would  lead to the creation of an Ergonomics Practice Leader position. A position I held until June 2009 before moving to a new position as 'Relationship Manager' as part of our new service model.",
+		"url" : "http://wcb.ns.ca" 	},
 	{
 		"employer" : "Humantech, Inc",
 		"title" : "Sr. Ergonomics Engineer",
 		"location" : "Irvine, California",
-		"dates" : "Dec 2000 - Apr - 2005",
-		"description" : "Some of the best friendships and work relationships in my life have come from my time at Humantech.  This was also a rewarding position based on the sheer number of people I helped with on a weekly basis. Southern California is full of Canadians, as well as, a few people from my alma mater, Dalhousie University.  This made the transition to the area much easier. My American colleagues welcomed us with open arms and it was great to experience each other’s cultures. In my role as an Ergonomics Engineer, I provided  ergonomics support to Fortune 500 organizations.  These amazing client companies provided me with a lot of practical hands-on experience. The people I met while consulting and training helped shape my perception of Ergonomics and why I do what I do. During my time at Humantech I had the chance to live in Ann Arbor, Michigan, Irvine, California and my home town of Glace Bay, Nova Scotia!"}
+		"dates" : "Dec 2000 - Aug - 2004",
+		"description" : "Some of the best friendships and work relationships in my life have come from my time at Humantech.  This was also a rewarding position based on the sheer number of people I helped with on a weekly basis. Southern California is full of Canadians, as well as, a few people from my alma mater, Dalhousie University.  This made the transition to the area much easier. My American colleagues welcomed us with open arms and it was great to experience each other’s cultures. In my role as an Ergonomics Engineer, I provided  ergonomics support to Fortune 500 organizations.  These amazing client companies provided me with a lot of practical hands-on experience. The people I met while consulting and training helped shape my perception of Ergonomics and why I do what I do. During my time at Humantech I had the chance to live in Ann Arbor, Michigan, Irvine, California and my home town of Glace Bay, Nova Scotia!",
+		"url" : "http://humantech.com" },
+		{
+		"employer" : "Humantech, Inc",
+		"title" : "Sr. Ergonomics Engineer",
+		"location" : "Ann Arbor, Michigan",
+		"dates" : "Aug 2004 - Apr - 2005",
+		"description" : "Same as above",
+	"url" : "http://humantech.com" }
 	],
 
 // Display Work
@@ -83,8 +92,6 @@ var work = {
 	}
 };
 
-work.display();
-
 // Projects
 var projects = {
 	"projects" : [
@@ -92,21 +99,32 @@ var projects = {
 		"title" : "Chat Application",
 		"dates" :	"Nov 2014",
 		"description" : "This was one of my first coding projects at UIT, to create a client-side, chat user interface (UI) that enables a user to add new messages to a list. To add a new message, the user can type messages in a form and either hit the enter key, or press a 'send' button.",
-		"images" : ["images/chat1.png"]
+		"images" : ["images/chat1.png"],
+		"url" : "https://github.com/drrnmcdnld/chatMVP" 
 	},
 	{
 		"title" : "Ergonomics Mobile App",
 		"dates" :	"Feb 2015",
 		"description" : "The project is required us to build a mobile app with our own unique idea. The app was built using the Ionic Framework, Node.js/Express to build a Rest API and a PostgreSQL database to store and retrieve data.",
 		"images" :[ 
-		"images/mobile2.png"]
+		"images/mobile1.png"],
+		"url" : "https://github.com/drrnmcdnld/mobileApp"
 	},
 	{
 		"title" : "Taskrr",
 		"dates" :	"Apr 2014",
 		"description" : "This project was a TaskRabbit clone, which is an online and mobile marketplace that allows users to outsource small jobs and tasks to others in their neighbourhood. Users name the task they need done, name the price they are willing to pay, and a network of pre-approved contractors bid to complete the job. In this project we used AngularJS and Firebase technologies.",
 		"images" :[
-		"images/taskrr1.png"]
+		"images/taskrr1.png"],
+		"url" : "https://github.com/drrnmcdnld/taskrr"
+	},
+	{
+		"title" : "Portfolio Site",
+		"dates" :	"Apr 2014",
+		"description" : "Converted a design mockup from PDF-file and replicated the design using HTML and CSS. To complete this I developed a responsive website to display images, descriptions and links for my portfolio projects as part of the Front-End Web Developer Nanodegree.",
+		"images" :[
+		"images/portfolio.png"],
+		"url" : "https://github.com/drrnmcdnld/UdacityP1"
 	}
 	],
 
@@ -126,8 +144,6 @@ var projects = {
 		}
 	}
 };
-
-projects.display();
 
 // Education
 var education = {
@@ -230,6 +246,10 @@ var education = {
 }
 };
 
+// Calling Display functions for each section
+bio.display();
+work.display();
+projects.display();
 education.display();
 
 // Adding locations to Google Map
@@ -241,7 +261,6 @@ function locationizer(work_obj) {
     }
     return locationArray;
 }
-
 
 // Logging clicks
 $(document).click(function (loc) {
